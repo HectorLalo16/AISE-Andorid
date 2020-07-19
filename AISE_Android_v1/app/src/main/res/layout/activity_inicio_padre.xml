@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".InicioPadreActivity">
+
+    <LinearLayout
+        android:id="@+id/llpadres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150sp"
+            android:layout_height="124dp"
+            android:src="@drawable/logo" />
+
+            <Button
+                android:id="@+id/btnAvisosP"
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="#082555"
+                android:drawableBottom="@drawable/ic_avisos"
+                android:gravity="bottom|center_horizontal"
+                android:text="@string/Avisos"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llpadres"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvInfoUsuario1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#FFFFFF"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUbicacion1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Ubicacion"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/tvHora1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Hora"
+                            android:textColor="#FF5252"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvNombre1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/Nombre"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvMatricula1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="end"
+                        android:text="@string/Matricula"
+                        android:textColor="#FC7C86"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnHistorialP1"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_historial"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Historial"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btnCaliP1"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_notas"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Calificaciones"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvInfoUsuario2"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#FFFFFF"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUbicacion2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Ubicacion"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/tvHora2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Hora"
+                            android:textColor="#FF5252"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvNombre2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/Nombre"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvMatricula2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="end"
+                        android:text="@string/Matricula"
+                        android:textColor="#FC7C86"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnHistorialP2"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_historial"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Historial"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btnCaliP2"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_notas"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Calificaciones"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvInfoUsuario3"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#FFFFFF"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUbicacion3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Ubicacion"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/tvHora3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Hora"
+                            android:textColor="#FF5252"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvNombre3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/Nombre"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvMatricula3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="end"
+                        android:text="@string/Matricula"
+                        android:textColor="#FC7C86"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnHistorialP3"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_historial"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Historial"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btnCaliP3"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_notas"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Calificaciones"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvInfoUsuario4"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#FFFFFF"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUbicacion4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Ubicacion"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/tvHora4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Hora"
+                            android:textColor="#FF5252"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvNombre4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/Nombre"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvMatricula4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="end"
+                        android:text="@string/Matricula"
+                        android:textColor="#FC7C86"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnHistorialP4"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_historial"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Historial"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btnCaliP4"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_notas"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Calificaciones"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvInfoUsuario5"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10sp"
+                android:backgroundTint="#FFFFFF"
+                card_view:cardCornerRadius="6dp"
+                card_view:cardElevation="1dp"
+                card_view:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvUbicacion5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="@string/Ubicacion"
+                            android:textSize="23sp" />
+
+                        <TextView
+                            android:id="@+id/tvHora5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Hora"
+                            android:textColor="#FF5252"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/tvNombre5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="@string/Nombre"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/tvMatricula5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:gravity="end"
+                        android:text="@string/Matricula"
+                        android:textColor="#FC7C86"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center">
+
+                        <Button
+                            android:id="@+id/btnHistorialP5"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_historial"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Historial"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btnCaliP5"
+                            android:layout_width="120dp"
+                            android:layout_height="50dp"
+                            android:layout_margin="5dp"
+                            android:background="#FF5252"
+                            android:drawableBottom="@drawable/ic_notas"
+                            android:gravity="bottom|center_horizontal"
+                            android:text="@string/Calificaciones"
+                            android:textColor="#FFFFFF"
+                            android:textSize="10sp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:textColor="#494949"
+        android:gravity="center"
+        android:text="@string/Contacto"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="end"
+        android:text="@string/Version"/>
+
+</RelativeLayout>

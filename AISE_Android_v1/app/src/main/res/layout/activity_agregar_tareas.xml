@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarTareasActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <ImageButton
+            android:id="@+id/ibRegresarAg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_back"/>
+
+        <EditText
+             android:id="@+id/etMateria"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:ems="10"
+             android:inputType="textPersonName"
+             android:hint="@string/Materia"
+             android:layout_marginTop="30dp"
+             />
+
+        <EditText
+            android:id="@+id/etValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Valor: 10%, Proyecto Final, Sugerencia, etc."
+            android:layout_marginTop="30dp"
+            />
+
+        <EditText
+            android:id="@+id/etTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/Indicaciones"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="30dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFecha"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#5A5A5A"
+                android:textColor="#fff"
+                android:text="@string/Fecha" />
+
+            <EditText
+                android:id="@+id/etFechaEntrega"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="@string/Fecha"
+                android:inputType="datetime" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Agregar"
+            android:textSize="20dp"
+            android:textColor="#FFFFFF"
+            android:background="#FF6E40"
+            android:padding="30dp"
+            android:layout_marginTop="50dp"
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

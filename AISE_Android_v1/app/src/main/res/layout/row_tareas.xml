@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        card_view:cardElevation="1dp"
+        card_view:cardCornerRadius="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            
+            <TextView
+                android:id="@+id/tvMateria"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/Materia"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:background="#FFDE63"
+                android:textColor="#fff"
+                android:padding="5sp">
+            </TextView>
+
+          
+
+            <TextView
+                android:id="@+id/tvValor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/Valor"
+                android:gravity="start"
+                android:textSize="20sp"
+                android:textColor="#494949"
+                android:background="#FFFFFF"
+                android:padding="5sp">
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Entrega"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:background="#FFFFFF"
+                    android:textColor="#494949"
+                    android:padding="5sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvFechaEn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fecha"
+                    android:gravity="start"
+                    android:textSize="20sp"
+                    android:background="#FFFFFF"
+                    android:textColor="#FF6E40"
+                    android:padding="5sp">
+                </TextView>
+
+            </LinearLayout>
+
+            <TextView
+            android:id="@+id/tvTarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Tareas"
+            android:gravity="start"
+            android:textSize="20sp"
+            android:background="#686868"
+            android:textColor="#fff"
+            android:padding="10sp">
+        </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Registrada"
+                    android:textSize="15sp"
+                    android:background="#FFFFFF"
+                    android:textColor="#494949"
+                    android:padding="5sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/tvFechaRe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Fecha"
+                    android:textSize="15sp"
+                    android:background="#FFFFFF"
+                    android:textColor="#536DFE"
+                    android:padding="5sp">
+                </TextView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

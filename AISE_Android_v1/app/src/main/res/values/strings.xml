@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">AISE</string>
+    <string name="Correo">Correo electrónico</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="Ingresar">Ingresar</string>
+    <string name="Contacto">Contacto: sistema.aise@gmail.com</string>
+    <string name="Version">v1</string>
+    <string name="InfoDeCuenta">Información de cuenta</string>
+    <string name="Ubicacion">Ubicación</string>
+    <string name="Hora">Hora</string>
+    <string name="Matricula">Matricula</string>
+    <string name="Nombre">Nombre</string>
+    <string name="Avisos">Avisos</string>
+    <string name="Historial">Historial</string>
+    <string name="Calificaciones">Calificaciones</string>
+    <string name="GrupoEscolar">Grupo Escolar</string>
+    <string name="Fecha">Fecha</string>
+    <string name="Periodo">Periodo</string>
+    <string name="Materia">Materia</string>
+    <string name="Tareas">Tareas</string>
+    <string name="Agregar">Agregar</string>
+    <string name="Valor">Valor</string>
+    <string name="Entrega">Entrega:</string>
+    <string name="Registrada">Registrada:</string>
+    <string name="Indicaciones">Indicaciones</string>
+    <string name="ValorEjem">Valor: 10%, Proyecto Final, Sugerencia, etc.</string>
+    <string name="espera">...</string>
+    <string name="CerrarSesion">Cerrar sesión</string>
+    <string name="Cargando">Cargando</string>
+    <string name="d"></string>
+</resources>
